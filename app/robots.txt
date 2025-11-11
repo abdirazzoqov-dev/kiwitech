@@ -1,0 +1,7 @@
+# app/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/ # Agar admin panelingiz bo'lsa
+
+Sitemap: https://kiwitech/sitemap.xml

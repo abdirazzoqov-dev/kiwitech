@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # /_next papkasiga, /api papkasiga va mavjud fayllarga bo'lgan so'rovlarni o'zgartirmaymiz
+  # Bu Next.js ning statik fayllari (CSS, JS, rasmlar) to'g'ri yuklanishi uchun kerak
+  RewriteCond %{REQUEST_URI} !^/_next/.*
+  RewriteCond %{REQUEST_URI} !^/api/.*
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  
+  # ...uni /index.html ga yo'naltiramiz, bu esa client-side routingni ishga tushiradi.
+  RewriteRule . /index.html [L]
+</IfModule>
