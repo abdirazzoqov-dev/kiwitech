@@ -258,11 +258,11 @@ export default function HomePage() {
 
       {/* ===== 3-BO'LIM: NIMA UCHUN BIZ? (O'ZGARISHSIZ) ===== */}
       <section className="w-full bg-white py-20 md:py-24">
-        <div className="container mx-auto max-w-7xl px-4">
+        <div className="container mx-auto max-w-6xl px-4">
           {/* Sarlavha qismi */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-              Nima uchun mijozlar Kiwitech'ni tanlashadi?
+              Nima uchun aynan Kiwitech Solutions 
             </h2>
             <p className="text-lg text-gray-600">
               Bizning xizmatlarimizni boshqalardan nima farq qiladi? Nima uchun
