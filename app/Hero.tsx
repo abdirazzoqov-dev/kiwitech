@@ -1,9 +1,13 @@
+'use client'
+
 import Link from 'next/link'
 import { Code, Smartphone, Server, Camera, Network } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 export function Hero() {
+  const t = useTranslations('hero')
   return (
-    <section className="w-full h-auto md:h-[90vh] min-h-[700px] flex items-center bg-white relative overflow-hidden">
+    <section className="w-full h-auto md:h-[90vh] min-h-[700px] flex items-center bg-white dark:bg-gray-900 relative overflow-hidden">
       {/* Orqa fon grid chiziqlari */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_rgba(0,0,0,0.03)_1px,_transparent_0)] bg-[length:20px_20px] opacity-70" />
 
@@ -11,38 +15,36 @@ export function Hero() {
         {/* Chap Tomon: Matn Mazmuni */}
         <div className="md:w-1/2 w-full text-center md:text-left relative z-10">
           <h1
-            className="text-4xl sm:text-5xl lg:text-3xl font-extrabold text-gray-900 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-3xl font-extrabold text-gray-900 dark:text-white leading-tight"
             style={{ animation: 'fadeInUp 0.5s ease-out 0.2s both' }}
           >
-            Biznesingizni{' '}
-            <span className="text-cyan-600">- Avtomatlashtiring</span>
+            {t('title1')}{' '}
+            <span className="text-cyan-600 dark:text-cyan-400">{t('title1Highlight')}</span>
           </h1>
           <br />
           <h1
-            className="text-4xl sm:text-5xl lg:text-3xl font-extrabold text-gray-900 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-3xl font-extrabold text-gray-900 dark:text-white leading-tight"
             style={{ animation: 'fadeInUp 0.5s ease-out 0.2s both' }}
           >
-            Xarajatlarni <span className="text-cyan-600"> - Kamaytiring</span>
+            {t('title2')} <span className="text-cyan-600 dark:text-cyan-400">{t('title2Highlight')}</span>
           </h1>
           <br />
-          <hr className="text-cyan-600 py-4" />
+          <hr className="text-cyan-600 dark:text-cyan-400 py-4" />
           <h1
-            className="text-4xl sm:text-5xl lg:text-5xl font-extrabold text-gray-900 leading-tight"
+            className="text-4xl sm:text-5xl lg:text-5xl font-extrabold text-gray-900 dark:text-white leading-tight"
             style={{ animation: 'fadeInUp 0.5s ease-out 0.2s both' }}
           >
-            IT muammolarni{' '}
-            <span className="text-cyan-600">
+            {t('title3')}{' '}
+            <span className="text-cyan-600 dark:text-cyan-400">
               {' '}
-              <br /> Bizga qo'yib bering
+              <br /> {t('title3Highlight')}
             </span>
           </h1>
           <p
-            className="mt-6 text-base sm:text-lg md:text-xl text-gray-600 max-w-xl mx-auto md:mx-0"
+            className="mt-6 text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-xl mx-auto md:mx-0"
             style={{ animation: 'fadeInUp 0.5s ease-out 0.4s both' }}
           >
-            Kiwitech Solutions'da biz sizning biznes g'oyalaringizni
-            veb-saytlardan tortib murakkab tarmoq yechimlarigacha bo'lgan yuqori
-            sifatli, ishonchli va kengaytiriladigan tizimlarga aylantiramiz.
+            {t('description')}
           </p>
           <div
             className="mt-10 flex flex-col sm:flex-row justify-center md:justify-start gap-4"
@@ -50,20 +52,19 @@ export function Hero() {
           >
             <Link
               href="/services"
-              className="bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg 
+              className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg 
                            transition-all duration-300 ease-in-out
-                           hover:bg-cyan-700 hover:scale-105 hover:-translate-y-1
-                           shadow-lg shadow-cyan-500/30 hover:shadow-xl hover:shadow-cyan-500/50"
+                           hover:shadow-xl hover:shadow-cyan-500/40 hover:scale-105 hover:-translate-y-1"
             >
-              Xizmatlarimiz
+              {t('servicesBtn')}
             </Link>
             <Link
               href="/contact"
-              className="bg-white text-gray-800 font-bold py-3 px-8 rounded-lg text-lg border border-gray-300
+              className="bg-white text-gray-800 font-bold py-3 px-8 rounded-lg text-lg border-2 border-gray-300
                            transition-all duration-300 ease-in-out 
-                           hover:bg-gray-100 hover:scale-105 hover:-translate-y-1 hover:shadow-lg"
+                           hover:bg-gray-50 hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:border-cyan-500"
             >
-              Bog'lanish
+              {t('contactBtn')}
             </Link>
           </div>
         </div>

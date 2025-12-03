@@ -1,0 +1,179 @@
+{
+  "common": {
+    "company": "Kiwitech Solutions",
+    "slogan": "Innovative IT Solutions"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "contactBtn": "Contact"
+  },
+  "hero": {
+    "title1": "Automate",
+    "title1Highlight": "Your Business",
+    "title2": "Reduce",
+    "title2Highlight": "Costs",
+    "title3": "IT Problems?",
+    "title3Highlight": "Leave Them to Us",
+    "description": "At Kiwitech Solutions, we transform your business ideas into high-quality, reliable, and scalable systems - from websites to complex network solutions.",
+    "servicesBtn": "Our Services",
+    "contactBtn": "Contact Us"
+  },
+  "homeServices": {
+    "title": "Our Core Services",
+    "subtitle": "A comprehensive suite of services that meet every requirement of your business.",
+    "web": {
+      "title": "Web Development",
+      "description": "Modern, responsive websites that adapt to any device, built with Next.js and Tailwind."
+    },
+    "mobile": {
+      "title": "Mobile Applications",
+      "description": "Fast and efficient mobile apps for iOS and Android based on React Native."
+    },
+    "cctv": {
+      "title": "Video Surveillance",
+      "description": "Real-time security for your facility using IP cameras and intelligent analytics."
+    },
+    "detailsBtn": "Learn More",
+    "viewAllBtn": "View All Services"
+  },
+  "whyUs": {
+    "title": "Why Choose Kiwitech Solutions",
+    "subtitle": "What sets our services apart? Why do over 50 successful companies trust us?",
+    "quality": {
+      "title": "Guaranteed Quality",
+      "description": "We don't just write code, we create stable and reliable solutions that meet international standards."
+    },
+    "process": {
+      "title": "Optimized Process",
+      "description": "Thanks to clear work stages, we deliver projects on time and within budget."
+    },
+    "security": {
+      "title": "First-Class Security",
+      "description": "Protecting your data and users is our priority. We ensure cybersecurity in every solution."
+    },
+    "support": {
+      "title": "Reliable Partnership",
+      "description": "Project delivery is just the beginning. We provide ongoing technical support and consulting as your business grows."
+    }
+  },
+  "workProcess": {
+    "title": "How is the Project Implemented?",
+    "subtitle": "Our proven 4-stage approach clearly shows the path from idea to reality.",
+    "step1": {
+      "title": "Analysis & Strategy",
+      "description": "We study your business, analyze goals, and develop a clear strategy for success."
+    },
+    "step2": {
+      "title": "UI/UX Design & Prototype",
+      "description": "We create user-friendly and modern designs and coordinate interactive prototypes with you."
+    },
+    "step3": {
+      "title": "Development & Testing",
+      "description": "We turn design into clean and efficient code and test the system for flawless operation."
+    },
+    "step4": {
+      "title": "Launch & Support",
+      "description": "We deploy your project to the server and provide technical support to ensure stable operation."
+    }
+  },
+  "cta": {
+    "title": "Ready to Start Your Project?",
+    "description": "We want to hear your idea and discuss how we can help bring it to reality.",
+    "contactBtn": "Contact Us"
+  },
+  "footer": {
+    "description": "Your reliable technology partner, turning ideas into digital reality.",
+    "pages": "Pages",
+    "servicesTitle": "Services",
+    "contact": "Contact",
+    "copyright": "All rights reserved."
+  },
+  "services": {
+    "seoTitle": "IT Services",
+    "seoDescription": "We offer websites, mobile apps, network services, video surveillance, and IT consulting solutions for your business.",
+    "pageTitle": "Our Services",
+    "pageSubtitle": "What We Offer?",
+    "pageDescription": "Technology solutions tailored to your business needs, results-oriented, and scalable.",
+    "webDev": {
+      "title": "Custom Websites",
+      "description": "We create fast websites for your business that attract customers and look beautiful on any device (phone, computer)."
+    },
+    "mobileApps": {
+      "title": "Mobile Applications",
+      "description": "We develop convenient and efficient mobile applications that live on your customers' phones and work on both iPhone and Android."
+    },
+    "uiux": {
+      "title": "UI/UX Design",
+      "description": "We ensure that your site or app is not only beautiful, but also understandable and very easy to use. Customers won't get lost."
+    },
+    "devops": {
+      "title": "Server Services (DevOps)",
+      "description": "We ensure your site or app runs continuously. Updates are released quickly and error-free, and the system is ready for heavy loads."
+    },
+    "videoSurveillance": {
+      "title": "Video Surveillance Systems",
+      "description": "We install cameras that show all areas for the security of your office, warehouse, or home. You can monitor them from your phone too."
+    },
+    "networking": {
+      "title": "Computer Networks",
+      "description": "We create a unified system where all your computers and devices quickly and securely \"communicate\" with each other. Your office will have no Wi-Fi \"dead zones\"."
+    },
+    "biometrics": {
+      "title": "Access Control (Biometrics)",
+      "description": "Systems that open doors using face recognition or fingerprints. You'll know exactly when your employees come and go, and unauthorized access is blocked."
+    },
+    "consulting": {
+      "title": "IT Consulting",
+      "description": "Don't know which technology to spend money on? We help determine which software will bring more benefits to your business."
+    },
+    "learnMore": "Learn More",
+    "ctaTitle": "Ready to Start Your Project?",
+    "ctaDescription": "We want to hear your idea and discuss how we can help bring it to reality.",
+    "ctaBtn": "Contact Us"
+  },
+  "about": {
+    "seoTitle": "About Us",
+    "seoDescription": "Learn about the Kiwitech Solutions team, our mission, and values.",
+    "pageTitle": "About Us",
+    "pageSubtitle": "We create innovative solutions for your business using technology.",
+    "missionTitle": "Our Mission",
+    "missionText": "Our main mission is to contribute to our clients' success through digitizing their business. We take an individual approach to each project and offer the most effective technology solutions.",
+    "teamTitle": "Our Team",
+    "teamText": "The Kiwitech Solutions team consists of experienced programmers, designers, and IT specialists who are masters of their craft. We constantly learn and develop, which is why we apply the latest technologies in our projects."
+  },
+  "contact": {
+    "seoTitle": "Contact",
+    "seoDescription": "Contact Kiwitech Solutions. We are ready to implement your projects.",
+    "pageTitle": "Contact Us",
+    "pageSubtitle": "Have an idea or just a question? We're always ready to help.",
+    "formTitle": "Submit a Project Request",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone Number (Optional)",
+    "serviceLabel": "What are you interested in?",
+    "message": "Brief description of the project",
+    "submitBtn": "Submit Request",
+    "submitting": "Submitting...",
+    "successTitle": "Your request has been sent!",
+    "successMessage": "Thank you! We have received your message. Our team will contact you as soon as possible.",
+    "backHome": "Back to Home",
+    "error": "An error occurred. Please try again or contact us directly.",
+    "directContactTitle": "Direct Contact",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "addressText": "Kashkadarya region, Karshi city",
+    "serviceOptions": {
+      "webDev": "Web Development",
+      "mobile": "Mobile Applications",
+      "cctv": "Video Surveillance",
+      "network": "Network",
+      "other": "Other"
+    }
+  }
+}
+

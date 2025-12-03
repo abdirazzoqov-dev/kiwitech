@@ -1,51 +1,45 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google' 
+import { Inter } from 'next/font/google'
+import { NextIntlClientProvider } from 'next-intl'
+import { getMessages } from 'next-intl/server'
 import './globals.css'
-import Navbar from '@/components/Navbar' // Navbar import qilindi
-import Footer from '@/components/Footer' // Footer import qilindi
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import { ThemeProvider } from '@/contexts/ThemeContext'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
 // Global (umumiy) metadata
 export const metadata: Metadata = {
   title: {
-    template: '%s | Kiwitech Solutions', // Har bir sahifa sarlavhasi shabloni
-    default: 'Kiwitech Solutions - Innovatsion IT Yechimlari', // Bosh sahifa uchun
+    template: '%s | Kiwitech Solutions',
+    default: 'Kiwitech Solutions - Innovatsion IT Yechimlari',
   },
-  // Saytning asosiy manzilini ko'rsatish
-  metadataBase: new URL('http://kiwitech.uz'),
+  metadataBase: new URL('https://kiwitech.uz'),
   description:
     'Kiwitech Solutions veb-dasturlash, mobil ilovalar, videokuzatuv va IT konsalting xizmatlarini taklif etadi.',
-  // Favicon qo'shildi
   icons: {
-    icon: "/kiwi2.jpg"
+    icon: '/kiwi2.jpg',
   },
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const messages = await getMessages()
+
   return (
-    <html lang="uz">
-      {/* Shrift klassi va asosiy fon rangi 'body' ga beriladi.
-        'bg-white' - Bosh sahifaning oq foni bilan mos keladi.
-      */}
-      <body className={`${inter.className} bg-white text-gray-900`}>
-        
-        {/* Navbar barcha sahifalarning tepasida ko'rinadi */}
-        <Navbar /> 
-        
-        {/* 'main' tegi sizning har bir sahifangizni (page.tsx) 
-          o'z ichiga oladi (masalan, Bosh sahifa, Xizmatlar sahifasi)
-        */}
-        <main>
-          {children}
-        </main>
-        
-        {/* Footer barcha sahifalarning pastida ko'rinadi */}
-        <Footer />
+    <html lang="uz" suppressHydrationWarning>
+      <body className={`${inter.className} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300`}>
+        <ThemeProvider>
+          <NextIntlClientProvider messages={messages}>
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

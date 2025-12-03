@@ -1,16 +1,20 @@
+'use client'
+
 import { ClipboardList, Palette, Code, Rocket } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 export function WorkProcess() {
+  const t = useTranslations('workProcess')
+
   return (
-    <section className="w-full py-20 md:py-24 bg-gray-50">
+    <section className="w-full py-20 md:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto max-w-5xl px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Loyiha Qanday Amalga Oshiriladi?
+            {t('title')}
           </h2>
           <p className="text-lg text-gray-600">
-            Bizning 4 bosqichli sinovdan o'tgan yondashuvimiz g'oyadan
-            haqiqatgacha bo'lgan yo'lni aniq ko'rsatadi.
+            {t('subtitle')}
           </p>
         </div>
 
@@ -18,61 +22,57 @@ export function WorkProcess() {
           <div className="absolute hidden md:block top-6 left-0 w-full h-1 bg-cyan-400 -translate-y-1/2" />
 
           <div className="relative text-center">
-            <div className="relative z-10 w-12 h-12 bg-cyan-600 rounded-full flex items-center justify-center text-white mx-auto ring-8 ring-gray-50">
+            <div className="relative z-10 w-12 h-12 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-full flex items-center justify-center text-white mx-auto ring-8 ring-gray-50 shadow-lg">
               <ClipboardList size={24} />
             </div>
             <div className="mt-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Tahlil va Strategiya
+                {t('step1.title')}
               </h3>
               <p className="text-gray-600 text-sm">
-                Biznesingizni o'rganamiz, maqsadlaringizni tahlil qilamiz va
-                muvaffaqiyat uchun aniq strategiya ishlab chiqamiz.
+                {t('step1.description')}
               </p>
             </div>
           </div>
 
           <div className="relative text-center">
-            <div className="relative z-10 w-12 h-12 bg-cyan-600 rounded-full flex items-center justify-center text-white mx-auto ring-8 ring-gray-50">
+            <div className="relative z-10 w-12 h-12 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-full flex items-center justify-center text-white mx-auto ring-8 ring-gray-50 shadow-lg">
               <Palette size={24} />
             </div>
             <div className="mt-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                UI/UX Dizayn va Prototip
+                {t('step2.title')}
               </h3>
               <p className="text-gray-600 text-sm">
-                Foydalanuvchilar uchun qulay va zamonaviy dizayn yaratamiz
-                va interaktiv prototipni siz bilan kelishamiz.
+                {t('step2.description')}
               </p>
             </div>
           </div>
 
           <div className="relative text-center">
-            <div className="relative z-10 w-12 h-12 bg-cyan-600 rounded-full flex items-center justify-center text-white mx-auto ring-8 ring-gray-50">
+            <div className="relative z-10 w-12 h-12 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-full flex items-center justify-center text-white mx-auto ring-8 ring-gray-50 shadow-lg">
               <Code size={24} />
             </div>
             <div className="mt-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Dasturlash va Sinov
+                {t('step3.title')}
               </h3>
               <p className="text-gray-600 text-sm">
-                Dizaynni toza va samarali kodga aylantiramiz va tizimning
-                mukammal ishlashini sinovdan o'tkazamiz.
+                {t('step3.description')}
               </p>
             </div>
           </div>
 
           <div className="relative text-center">
-            <div className="relative z-10 w-12 h-12 bg-cyan-600 rounded-full flex items-center justify-center text-white mx-auto ring-8 ring-gray-50">
+            <div className="relative z-10 w-12 h-12 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-full flex items-center justify-center text-white mx-auto ring-8 ring-gray-50 shadow-lg">
               <Rocket size={24} />
             </div>
             <div className="mt-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Ishga Tushirish va Qo'llab-quvvatlash
+                {t('step4.title')}
               </h3>
               <p className="text-gray-600 text-sm">
-                Loyihangizni serverga joylashtiramiz va barqaror ishlashni
-                ta'minlash uchun texnik yordam ko'rsatamiz.
+                {t('step4.description')}
               </p>
             </div>
           </div>

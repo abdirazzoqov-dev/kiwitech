@@ -1,40 +1,41 @@
+'use client'
+
 import Link from 'next/link'
 import { Code, Smartphone, Camera, ArrowRight } from 'lucide-react'
-
-const homeServices = [
-  {
-    title: 'Veb-dasturlash',
-    description:
-      'Next.js va Tailwind yordamida har qanday qurilmaga moslashuvchan, zamonaviy veb-saytlar.',
-    icon: <Code size={32} className="text-cyan-600" />,
-    href: '/services/web-development',
-  },
-  {
-    title: 'Mobil Ilovalar',
-    description:
-      'React Native asosida iOS va Android uchun tez ishlovchi, samarali mobil dasturlar.',
-    icon: <Smartphone size={32} className="text-cyan-600" />,
-    href: '/services/mobile-apps',
-  },
-  {
-    title: 'Videokuzatuv',
-    description:
-      "IP kameralar va aqlli tahlil yordamida ob'ektingiz xavfsizligini real vaqtda ta'minlash.",
-    icon: <Camera size={32} className="text-cyan-600" />,
-    href: '/services/cctv',
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export function HomeServices() {
+  const t = useTranslations('homeServices')
+
+  const homeServices = [
+    {
+      title: t('web.title'),
+      description: t('web.description'),
+      icon: <Code size={32} className="text-cyan-600" />,
+      href: '/services',
+    },
+    {
+      title: t('mobile.title'),
+      description: t('mobile.description'),
+      icon: <Smartphone size={32} className="text-cyan-600" />,
+      href: '/services',
+    },
+    {
+      title: t('cctv.title'),
+      description: t('cctv.description'),
+      icon: <Camera size={32} className="text-cyan-600" />,
+      href: '/services',
+    },
+  ]
+
   return (
-    <section className="w-full py-20 md:py-24 bg-gray-50">
+    <section className="w-full py-20 md:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto max-w-6xl px-4">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
-          Asosiy Xizmatlarimiz
+          {t('title')}
         </h2>
         <p className="text-center text-base sm:text-lg text-gray-600 mb-12 max-w-xl mx-auto">
-          Biznesingizning har bir talabiga javob beradigan keng qamrovli
-          xizmatlar to'plami.
+          {t('subtitle')}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -55,7 +56,7 @@ export function HomeServices() {
               <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
               <p className="text-gray-600 mb-5">{service.description}</p>
               <span className="font-semibold text-cyan-600 flex items-center group-hover:underline">
-                Batafsil
+                {t('detailsBtn')}
                 <ArrowRight
                   size={18}
                   className="ml-2 transition-transform duration-300 group-hover:translate-x-1"
@@ -68,11 +69,11 @@ export function HomeServices() {
         <div className="text-center mt-12">
           <Link
             href="/services"
-            className="bg-gray-800 text-white font-bold py-3 px-8 rounded-lg
+            className="inline-block bg-gradient-to-r from-gray-800 to-gray-900 text-white font-bold py-3 px-8 rounded-lg
                            transition-all duration-300 ease-in-out 
-                           hover:bg-gray-700 hover:scale-105 hover:-translate-y-1"
+                           hover:shadow-lg hover:shadow-gray-800/30 hover:scale-105 hover:-translate-y-1"
           >
-            Barcha Xizmatlarni Ko'rish
+            {t('viewAllBtn')}
           </Link>
         </div>
       </div>

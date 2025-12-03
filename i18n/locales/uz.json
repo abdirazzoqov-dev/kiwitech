@@ -1,0 +1,179 @@
+{
+  "common": {
+    "company": "Kiwitech Solutions",
+    "slogan": "Innovatsion IT Yechimlari"
+  },
+  "nav": {
+    "home": "Bosh Sahifa",
+    "services": "Xizmatlar",
+    "about": "Biz haqimizda",
+    "portfolio": "Portfolio",
+    "contact": "Bog'lanish",
+    "contactBtn": "Bog'lanish"
+  },
+  "hero": {
+    "title1": "Biznesingizni",
+    "title1Highlight": "- Avtomatlashtiring",
+    "title2": "Xarajatlarni",
+    "title2Highlight": "- Kamaytiring",
+    "title3": "IT muammolarni",
+    "title3Highlight": "Bizga qo'yib bering",
+    "description": "Kiwitech Solutions'da biz sizning biznes g'oyalaringizni veb-saytlardan tortib murakkab tarmoq yechimlarigacha bo'lgan yuqori sifatli, ishonchli va kengaytiriladigan tizimlarga aylantiramiz.",
+    "servicesBtn": "Xizmatlarimiz",
+    "contactBtn": "Bog'lanish"
+  },
+  "homeServices": {
+    "title": "Asosiy Xizmatlarimiz",
+    "subtitle": "Biznesingizning har bir talabiga javob beradigan keng qamrovli xizmatlar to'plami.",
+    "web": {
+      "title": "Veb-dasturlash",
+      "description": "Next.js va Tailwind yordamida har qanday qurilmaga moslashuvchan, zamonaviy veb-saytlar."
+    },
+    "mobile": {
+      "title": "Mobil Ilovalar",
+      "description": "React Native asosida iOS va Android uchun tez ishlovchi, samarali mobil dasturlar."
+    },
+    "cctv": {
+      "title": "Videokuzatuv",
+      "description": "IP kameralar va aqlli tahlil yordamida ob'ektingiz xavfsizligini real vaqtda ta'minlash."
+    },
+    "detailsBtn": "Batafsil",
+    "viewAllBtn": "Barcha Xizmatlarni Ko'rish"
+  },
+  "whyUs": {
+    "title": "Nima uchun aynan Kiwitech Solutions",
+    "subtitle": "Bizning xizmatlarimizni boshqalardan nima farq qiladi? Nima uchun 50+ dan ortiq muvaffaqiyatli kompaniyalar aynan bizga ishonishadi?",
+    "quality": {
+      "title": "Kafolatlangan Sifat",
+      "description": "Biz shunchaki kod yozmaymiz, biz xalqaro standartlarga javob beradigan barqaror va ishonchli yechimlar yaratamiz."
+    },
+    "process": {
+      "title": "Optimallashtirilgan Jarayon",
+      "description": "Aniqlashtirilgan ish bosqichlari tufayli loyihalarni belgilangan muddatda va byudjet doirasida topshiramiz."
+    },
+    "security": {
+      "title": "Birinchi darajali Xavfsizlik",
+      "description": "Ma'lumotlaringiz va foydalanuvchilaringiz himoyasi — bizning ustuvor vazifamiz. Har bir yechimda kiberxavfsizlikni ta'minlaymiz."
+    },
+    "support": {
+      "title": "Ishonchli Hamkorlik",
+      "description": "Loyiha topshirilishi — bu shunchaki boshlanishi. Biz biznesingiz rivojlanishi bilan birga doimiy texnik yordam va maslahat beramiz."
+    }
+  },
+  "workProcess": {
+    "title": "Loyiha Qanday Amalga Oshiriladi?",
+    "subtitle": "Bizning 4 bosqichli sinovdan o'tgan yondashuvimiz g'oyadan haqiqatgacha bo'lgan yo'lni aniq ko'rsatadi.",
+    "step1": {
+      "title": "Tahlil va Strategiya",
+      "description": "Biznesingizni o'rganamiz, maqsadlaringizni tahlil qilamiz va muvaffaqiyat uchun aniq strategiya ishlab chiqamiz."
+    },
+    "step2": {
+      "title": "UI/UX Dizayn va Prototip",
+      "description": "Foydalanuvchilar uchun qulay va zamonaviy dizayn yaratamiz va interaktiv prototipni siz bilan kelishamiz."
+    },
+    "step3": {
+      "title": "Dasturlash va Sinov",
+      "description": "Dizaynni toza va samarali kodga aylantiramiz va tizimning mukammal ishlashini sinovdan o'tkazamiz."
+    },
+    "step4": {
+      "title": "Ishga Tushirish va Qo'llab-quvvatlash",
+      "description": "Loyihangizni serverga joylashtiramiz va barqaror ishlashni ta'minlash uchun texnik yordam ko'rsatamiz."
+    }
+  },
+  "cta": {
+    "title": "Loyihangizni boshlashga tayyormisiz?",
+    "description": "Biz sizning g'oyangizni eshitishni va uni haqiqatga aylantirishda qanday yordam berishimizni muhokama qilishni xohlaymiz.",
+    "contactBtn": "Biz bilan bog'lanish"
+  },
+  "footer": {
+    "description": "G'oyalaringizni raqamli reallikka aylantiruvchi ishonchli texnologik hamkoringiz.",
+    "pages": "Sahifalar",
+    "servicesTitle": "Xizmatlar",
+    "contact": "Aloqa",
+    "copyright": "Barcha huquqlar himoyalangan."
+  },
+  "services": {
+    "seoTitle": "IT Xizmatlari",
+    "seoDescription": "Biz biznesingiz uchun veb-saytlar, mobil ilovalar, tarmoq xizmatlari, videokuzatuv va IT konsalting yechimlarini taklif etamiz.",
+    "pageTitle": "Xizmatlarimiz",
+    "pageSubtitle": "Biz Nima Taklif Qilamiz?",
+    "pageDescription": "Biznesingiz ehtiyojlariga moslashtirilgan, natijaga yo'naltirilgan va kengaytirilishi mumkin bo'lgan texnologik yechimlar.",
+    "webDev": {
+      "title": "Maxsus Veb-saytlar",
+      "description": "Sizning biznesingiz uchun mijozlarni jalb qiladigan, har qanday qurilmada (telefon, kompyuter) chiroyli ko'rinadigan tezkor veb-saytlar yaratamiz."
+    },
+    "mobileApps": {
+      "title": "Mobil Ilovalar",
+      "description": "Mijozlaringiz telefonida yashaydigan, ham iPhone, ham Android uchun ishlaydigan qulay va samarali mobil ilovalar ishlab chiqamiz."
+    },
+    "uiux": {
+      "title": "UI/UX Dizayn",
+      "description": "Saytingiz yoki ilovangiz nafaqat chiroyli, balki tushunarli va foydalanishga juda oson bo'lishini ta'minlaymiz. Mijozlar adashib qolmaydi."
+    },
+    "devops": {
+      "title": "Server Xizmatlari (DevOps)",
+      "description": "Saytingiz yoki ilovangiz har doim uzluksiz ishlashini ta'minlaymiz. Yangilanishlar tez va xatosiz chiqadi, tizim esa katta yuklamalarga tayyor turadi."
+    },
+    "videoSurveillance": {
+      "title": "Videokuzatuv Tizimlari",
+      "description": "Ofisingiz, omboringiz yoki uyingiz xavfsizligi uchun hamma joyni ko'rsatib turadigan kameralar o'rnatamiz. Ularni telefoningizdan ham kuzata olasiz."
+    },
+    "networking": {
+      "title": "Kompyuter Tarmoqlari",
+      "description": "Barcha kompyuterlaringiz va qurilmalaringiz bir-biri bilan tez va xavfsiz \"gaplashadigan\" yagona tizim yaratamiz. Ofisingizda Wi-Fi \"o'lik\" nuqtalari bo'lmaydi."
+    },
+    "biometrics": {
+      "title": "Kirish Nazorati (Biometrika)",
+      "description": "Eshiklarni yuzni tanish yoki barmoq izi bilan ochadigan tizimlar. Xodimlaringiz qachon kelib-ketganini aniq bilib turasiz va begonalarga yo'l yopiladi."
+    },
+    "consulting": {
+      "title": "IT Maslahati (Konsalting)",
+      "description": "Qaysi texnologiyaga pul sarflash kerakligini bilmayapsizmi? Biznesingizga qaysi dastur ko'proq foyda keltirishini aniqlashga yordam beramiz."
+    },
+    "learnMore": "Batafsil bilish",
+    "ctaTitle": "Loyihangizni boshlashga tayyormisiz?",
+    "ctaDescription": "Biz sizning g'oyangizni eshitishni va uni haqiqatga aylantirishda qanday yordam berishimizni muhokama qilishni xohlaymiz.",
+    "ctaBtn": "Biz bilan bog'lanish"
+  },
+  "about": {
+    "seoTitle": "Biz haqimizda",
+    "seoDescription": "Kiwitech Solutions jamoasi, bizning missiyamiz va qadriyatlarimiz haqida bilib oling.",
+    "pageTitle": "Biz haqimizda",
+    "pageSubtitle": "Biz texnologiyalar yordamida biznesingiz uchun innovatsion yechimlar yaratamiz.",
+    "missionTitle": "Bizning Missiyamiz",
+    "missionText": "Bizning asosiy missiyamiz - mijozlarimizning biznesini raqamlashtirish orqali ularning muvaffaqiyatiga hissa qo'shish. Biz har bir loyihaga individual yondashamiz va eng samarali texnologik yechimlarni taklif qilamiz.",
+    "teamTitle": "Bizning Jamoa",
+    "teamText": "Kiwitech Solutions jamoasi - o'z ishining ustasi bo'lgan tajribali dasturchilar, dizaynerlar va IT mutaxassislardan iborat. Biz doimiy ravishda o'rganamiz va rivojlanamiz, shuning uchun ham eng so'nggi texnologiyalarni loyihalarimizda qo'llaymiz."
+  },
+  "contact": {
+    "seoTitle": "Bog'lanish",
+    "seoDescription": "Kiwitech Solutions bilan bog'laning. Biz sizning loyihalaringizni amalga oshirishga tayyormiz.",
+    "pageTitle": "Biz bilan bog'laning",
+    "pageSubtitle": "G'oyangiz bormi yoki shunchaki savolingiz bor-mi? Biz har doim yordam berishga tayyormiz.",
+    "formTitle": "Loyiha so'rovini yuborish",
+    "fullName": "To'liq ism",
+    "email": "Email",
+    "phone": "Telefon Raqam (Ixtiyoriy)",
+    "serviceLabel": "Sizni nima qiziqtiradi?",
+    "message": "Loyiha haqida qisqacha",
+    "submitBtn": "So'rovni Yuborish",
+    "submitting": "Yuborilmoqda...",
+    "successTitle": "So'rovingiz yuborildi!",
+    "successMessage": "Rahmat! Biz sizning xabaringizni qabul qildik. Jamoamiz imkon qadar tezroq siz bilan bog'lanadi.",
+    "backHome": "Bosh sahifaga qaytish",
+    "error": "Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring yoki biz bilan to'g'ridan-to'g'ri bog'laning.",
+    "directContactTitle": "To'g'ridan-to'g'ri Aloqa",
+    "emailLabel": "Email",
+    "phoneLabel": "Telefon",
+    "addressLabel": "Manzil",
+    "addressText": "Qashqadaryo viloyati, Qarshi shahar",
+    "serviceOptions": {
+      "webDev": "Veb-dasturlash",
+      "mobile": "Mobil Ilovalar",
+      "cctv": "Videokuzatuv",
+      "network": "Tarmoq",
+      "other": "Boshqa"
+    }
+  }
+}
+
