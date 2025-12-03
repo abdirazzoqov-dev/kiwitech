@@ -33,13 +33,13 @@ export default async function RootLayout({
   return (
     <html lang="uz" suppressHydrationWarning>
       <body className={`${inter.className} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300`}>
-        <Providers>
-          <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages}>
+          <Providers>
             <Navbar />
             <main>{children}</main>
             <Footer />
-          </NextIntlClientProvider>
-        </Providers>
+          </Providers>
+        </NextIntlClientProvider>
       </body>
     </html>
   )
