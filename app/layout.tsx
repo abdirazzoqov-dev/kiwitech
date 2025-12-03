@@ -5,7 +5,7 @@ import { getMessages } from 'next-intl/server'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { ThemeProvider } from '@/contexts/ThemeContext'
+import { Providers } from '@/components/Providers'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
@@ -33,13 +33,13 @@ export default async function RootLayout({
   return (
     <html lang="uz" suppressHydrationWarning>
       <body className={`${inter.className} bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300`}>
-        <ThemeProvider>
+        <Providers>
           <NextIntlClientProvider messages={messages}>
             <Navbar />
             <main>{children}</main>
             <Footer />
           </NextIntlClientProvider>
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   )
