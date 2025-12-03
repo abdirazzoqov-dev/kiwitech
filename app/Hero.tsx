@@ -7,9 +7,11 @@ import { useTranslations } from 'next-intl'
 export function Hero() {
   const t = useTranslations('hero')
   return (
-    <section className="w-full h-auto md:h-[90vh] min-h-[700px] flex items-center bg-white dark:bg-gray-900 relative overflow-hidden">
-      {/* Orqa fon grid chiziqlari */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_rgba(0,0,0,0.03)_1px,_transparent_0)] bg-[length:20px_20px] opacity-70" />
+    <section className="w-full h-auto md:h-[90vh] min-h-[700px] flex items-center bg-gradient-to-br from-white via-gray-50 to-cyan-50/30 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_rgba(6,182,212,0.08)_1px,_transparent_0)] dark:bg-[radial-gradient(circle_at_1px_1px,_rgba(6,182,212,0.05)_1px,_transparent_0)] bg-[length:24px_24px] opacity-70" />
+      <div className="absolute top-10 right-10 w-72 h-72 bg-cyan-500/5 dark:bg-cyan-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s' }} />
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-blue-500/5 dark:bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '10s' }} />
 
       <div className="container mx-auto max-w-7xl px-4 h-full flex flex-col md:flex-row items-center pt-24 md:pt-0">
         {/* Chap Tomon: Matn Mazmuni */}
@@ -52,19 +54,35 @@ export function Hero() {
           >
             <Link
               href="/services"
-              className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg 
-                           transition-all duration-300 ease-in-out
-                           hover:shadow-xl hover:shadow-cyan-500/40 hover:scale-105 hover:-translate-y-1"
+              className="group relative bg-gradient-to-r from-cyan-600 via-blue-600 to-cyan-600 bg-size-200 bg-pos-0 
+                         text-white font-bold py-4 px-10 rounded-xl text-lg 
+                         transition-all duration-500 ease-out
+                         hover:bg-pos-100 hover:shadow-2xl hover:shadow-cyan-500/50 
+                         hover:scale-105 hover:-translate-y-1
+                         before:absolute before:inset-0 before:rounded-xl before:bg-gradient-to-r before:from-cyan-400 before:to-blue-400 
+                         before:opacity-0 hover:before:opacity-20 before:blur-xl before:transition-opacity before:duration-500"
             >
-              {t('servicesBtn')}
+              <span className="relative z-10 flex items-center gap-2">
+                {t('servicesBtn')}
+                <svg className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
             </Link>
             <Link
               href="/contact"
-              className="bg-white text-gray-800 font-bold py-3 px-8 rounded-lg text-lg border-2 border-gray-300
-                           transition-all duration-300 ease-in-out 
-                           hover:bg-gray-50 hover:scale-105 hover:-translate-y-1 hover:shadow-lg hover:border-cyan-500"
+              className="group relative bg-white dark:bg-gray-800 text-gray-900 dark:text-white font-bold py-4 px-10 rounded-xl text-lg 
+                         border-2 border-gray-200 dark:border-gray-700
+                         transition-all duration-300 ease-out 
+                         hover:bg-gradient-to-r hover:from-cyan-50 hover:to-blue-50 dark:hover:from-gray-700 dark:hover:to-gray-800
+                         hover:border-cyan-500 hover:scale-105 hover:-translate-y-1 hover:shadow-xl"
             >
-              {t('contactBtn')}
+              <span className="relative z-10 flex items-center gap-2">
+                {t('contactBtn')}
+                <svg className="w-5 h-5 transition-transform duration-300 group-hover:rotate-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </span>
             </Link>
           </div>
         </div>
